@@ -1,20 +1,26 @@
 function Robot(){
-    this.text = 'I am the Robot. I just work.';
+    
     this.work = function(){
-        console.log(this.text);
+        console.log('I am the Robot. I just work.');
     };
 }
 function CoffeeRobot(){
     Robot.call(this);
-    this.text = 'I am the CoffeeRobot. I make  Coffee.'
+    this.work = function(){
+        console.log('I am the CoffeeRobot. I make  Coffee.');
+    }
 }
 function RobotDancer(){
     Robot.call(this);
-    this.text = 'I am the DancerRobot. I just danc.'
+    this.work = function() {
+        console.log('I am the DancerRobot. I just danc.');
+    }
 }
 function RobotCoocker(){
     Robot.call(this);
-    this.text = 'I am CoockerRobot. I just coock.'
+    this.work = function() {
+        console.log('I am CoockerRobot. I just coock.');
+    }
 }
 
 

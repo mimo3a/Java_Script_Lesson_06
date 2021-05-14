@@ -1,22 +1,28 @@
 function Robot(){
-    this.text = 'I am the Robot. I just work.';   
+    
 }
 Robot.prototype.work = function(){
-    console.log(this.text);
+    console.log('I am the Robot. I just work.');
 }
 
 function CoffeeRobot(){
-    this.text = 'I am the CoffeeRobot. I make  Coffee.'
-}
+    this.work = function(){
+        console.log('I am the CoffeeRobot. I make  Coffee.');
+    }
+    }
 CoffeeRobot.prototype = Object.create(Robot.prototype);
 
 function RobotDancer(){
-    this.text = 'I am the DancerRobot. I just danc.'
+    this.work = function() {
+        console.log('I am the DancerRobot. I just danc.')
+    }
 }
 RobotDancer.prototype = Object.create(Robot.prototype);
 
 function RobotCoocker(){
-    this.text = 'I am CoockerRobot. I just coock.'
+    this.work = function(){
+        console.log('I am CoockerRobot. I just coock.');
+    }
 }
 RobotCoocker.prototype = Object.create(Robot.prototype);
 
